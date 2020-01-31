@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         PROJECT_ID = 'dev-test-254718'
-        CLUSTER_NAME = 'my-first-gke-cluster'
+        CLUSTER_NAME = 'gke-cluster1'
         LOCATION = 'us-central1-b'
         CREDENTIALS_ID = 'gke'
     }
