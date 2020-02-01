@@ -1,9 +1,9 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-name: hello
-labels:
-  app: hello
+  name: hello
+  labels:
+    app: hello
 spec:
 strategy:
   type: Recreate
@@ -15,7 +15,7 @@ template:
   spec:
     containers:
     - name: hello
-      image: DOCKER-HUB-USERNAME/hello:latest
+      image: jjchavanne/hello:latest
       imagePullPolicy: Always
       ports:
       - containerPort: 5000
